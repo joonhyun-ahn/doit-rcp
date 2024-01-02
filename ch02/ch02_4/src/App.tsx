@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import P from './P';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // const texts = [<p>hello</p>, <p>world</p>];
+  // return <div>{texts}</div>;
+
+  // const texts = ['hello', 'world2'].map((value, index) => <p key={index} children={value} />);
+  // return <div children={texts}></div>;
+
+  const texts = ['hello', 'world4'].map((value, index) => <P key={index} children={value} />);
+  return <div children={texts} />;
 }
 
 export default App;
