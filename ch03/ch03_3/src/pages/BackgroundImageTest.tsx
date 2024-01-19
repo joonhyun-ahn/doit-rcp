@@ -10,6 +10,8 @@ export default function BackgroundImageTest() {
       <Div className="mt-4 bg-gray-300 h-80" src={src}>
         <Subtitle className="text-gray-500">Some Text here</Subtitle>
       </Div>
+      {/* <Div className="bg-contain" src={src} height="10rem" />;
+      <Div className="bg-auto" src={src} height="10rem" />; */}
     </section>
   );
 }
