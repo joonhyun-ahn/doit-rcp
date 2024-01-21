@@ -7,7 +7,7 @@ export type DivProps = ReactDivProps & PropsWithChildren<WidthHeight> & LeftRigh
 
 export const Div: FC<DivProps> = ({ width, height, style: _style, src, className: _className, left, right, top, bottom, ...props }) => {
   const style = { ..._style, width, height, backgroundImage: src && `url(${src})`, left, right, top, bottom };
-  const className = ['box-sizing', src && 'bg-gray-300', _className].join(' ').trim();
+  const className = ['box-sizing', src && 'bg-gray-300', _className].join(' ');
 
   return <div {...props} className={className} style={style} />;
 };
