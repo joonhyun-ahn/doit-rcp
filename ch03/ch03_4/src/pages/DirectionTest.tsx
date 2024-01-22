@@ -4,7 +4,7 @@ import * as D from '../data';
 export default function DirectionTest() {
   const boxes = D.range(1, 9 + 1).map((number) => {
     return (
-      <p key={number} className="p-1 mt-1 ml-1 border-2 border-blue-300">
+      <p key={number} className={`p-1 mt-1 ml-1 border-2 border-blue-300`}>
         {number}
       </p>
     );
