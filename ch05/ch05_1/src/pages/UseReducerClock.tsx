@@ -1,4 +1,3 @@
-import { useDispatch, useSelector } from 'react-redux';
 import type { AppState } from '../store';
 import type { SetTodayAction } from '../store/actions';
 import { Div, Subtitle, Title } from '../components';
@@ -21,10 +20,10 @@ export default function UseReducerClock() {
   });
 
   return (
-    <Div className="flex flex-col justify-center items-center mt-16">
+    <Div className="flex flex-col items-center justify-center mt-16">
       <Title className="text-5xl">UseReducerClock</Title>
-      <Title className="text-3xl mt-4">{today.toLocaleTimeString()}</Title>
-      <Subtitle className="text-2xl mt-4">{today.toLocaleDateString()}</Subtitle>
+      <Title className="mt-4 text-3xl">{today.toLocaleTimeString()}</Title>
+      <Subtitle className="mt-4 text-2xl">{today.toLocaleDateString()}</Subtitle>
     </Div>
   );
 }
