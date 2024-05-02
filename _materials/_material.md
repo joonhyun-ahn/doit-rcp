@@ -1,0 +1,3 @@
+- 4-3 useState
+  - p298 고차함수로 radio 버튼 구현
+  - FormData 내용을 json으로 `const json = Object.fromEntries(formData)`
